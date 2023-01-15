@@ -1,0 +1,8 @@
+.metrics2 {
+    background-color: rgb(227, 231, 252);
+    @include getNavbarStyles;
+    span {
+      font-weight: 700;
+      color: rgb(109, 109, 109);
+    }
+  }

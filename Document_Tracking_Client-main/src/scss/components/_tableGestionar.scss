@@ -1,0 +1,24 @@
+
+
+.button-archivo{
+          background-size: 20px 20px;
+          background-color: #983ADE ;
+          border: 1px solid #983ADE;
+          border-radius: 4px;
+          box-shadow: rgba(0, 0, 0, .1) 0 1px 2px 0;
+          box-sizing: border-box;
+          color: #fff;
+          cursor: pointer;
+          font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
+          font-size: 14px;
+          font-weight: 200;
+          outline: none;
+          outline: 0;
+          padding: 1px 5px;
+          text-align: center;
+          transform: translateY(0);
+          transition: transform 100ms, box-shadow 100ms;
+          user-select: none;
+          -webkit-user-select: none;
+          touch-action: manipulation;
+}

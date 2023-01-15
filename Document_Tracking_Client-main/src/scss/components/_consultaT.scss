@@ -1,0 +1,104 @@
+.metrics {
+    background-color: rgb(227, 231, 252);
+    padding: 0 2rem;
+    @include getNavbarStyles;
+    span {
+      font-weight: 700;
+      color: rgb(109, 109, 109);
+    }
+  
+    .grid-one {
+      display:inline;
+      grid-template-columns: 2fr 1fr;
+      gap: 1rem;
+      height: 70%;
+      .top__card {
+        @include getCardStyles;
+        position: center;
+  
+        .container_top{
+          display: inline;
+  
+          .container_text{
+            display: flex;
+            text-align: left;
+            float: left;
+          }
+  
+          .container_button{
+            display: flex;
+            text-align: right;
+            float: right;
+          }
+        }
+  
+        .button-62 {
+          background: linear-gradient(to bottom right, #BF7FEE , #5D2587 );
+          border: 0;
+          border-radius: 12px;
+          color: #FFFFFF;
+          cursor: pointer;
+          display: inline-block;
+          font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 2.5;
+          outline: transparent;
+          padding: 0 1rem;
+          text-align: center;
+          text-decoration: none;
+          transition: box-shadow .2s ease-in-out;
+          user-select: none;
+          -webkit-user-select: none;
+          touch-action: manipulation;
+          white-space: nowrap;
+        }
+        
+        .button-62:hover {
+          box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+                  transform: translateY(-2px);
+        }
+        
+  
+        .container_table{
+          margin-top: 4%;
+          
+          .button-37 {
+            background: url('../../assets/edit.png') no-repeat center center;
+            background-size: 28px 28px;
+            background-color: #983ADE ;
+            border: 1px solid #983ADE;
+            border-radius: 4px;
+            box-shadow: rgba(0, 0, 0, .1) 0 1px 2px 0;
+            box-sizing: border-box;
+            color: #fff;
+            cursor: pointer;
+            font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 20px;
+            font-weight: 200;
+            outline: none;
+            outline: 0;
+            padding: 5px 20px;
+            text-align: center;
+            transform: translateY(0);
+            transition: transform 100ms, box-shadow 100ms;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+          }
+          
+          .button-37:hover {
+            box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+            transform: translateY(-2px);
+          }
+          
+          @media (min-width: 768px) {
+            .button-37 {
+              padding: 10px 30px;
+            }
+          }
+        }
+      }
+  
+    }
+  }

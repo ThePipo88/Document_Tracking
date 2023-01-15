@@ -1,0 +1,170 @@
+//Sing up
+###
+POST http://localhost:3977/api/v1/tramites/registrartramites
+Content-Type: application/json
+
+{
+    "tipo_tra": "Registro laboral",
+    "departamento_id": "62b945ece783af39ebe033e0",
+    "descripcion_tra": "Se necesita un registro laboral",
+    "ciclo_tra":
+        [
+            {
+                "nombre_departamento": "Finanzas",
+                "id_departamento": "dfsdf",
+                "estado_cic": false
+            },
+            {
+                "nombre_departamento": "Contaduria",
+                "id_departamento": "dfsdf",
+                "estado_cic": true
+            }
+        ],
+    "documentos": [
+        {
+            "nombre_documento": "Cedula",
+            "descripcion_documento": "Se requiere la cedula",
+            "estado_documento": true,
+            "tipo_documento": "PDF"
+        },
+        {
+            "nombre_documento": "Hoja de delincuencia",
+            "descripcion_documento": "Se requiere la hoja de delincuencia",
+            "estado_documento": true,
+            "tipo_documento": "PDF"
+        }
+    ]
+}
+
+###
+PUT http://localhost:3977/api/v1/organizacion/updateById/62b6a66c2f4f49de17bec61b
+Content-Type: application/json
+
+{
+    "nombre_org": "sdfsadf",
+    "descripcion_org": "asd",
+    "tipo_org": "sdf",
+    "correo_org": "crede2sassd@ssgmail.sdfcom"
+}
+
+//Registrar empleados
+###
+POST http://localhost:3977/api/v1/casos/registrar/caso
+Content-Type: application/json
+
+{
+    "nombre_caso": "String",
+    "fecApertura_cas": "09-09-2000",
+    "fecFinalizacion_cas":  "09-09-2000",
+    "nume_cas": "String",
+    "formato_cas": "String",
+    "isAbierto_cas": true,
+    "id_tramite": "String",
+    "id_departamento": "String",
+    "id_organizacion": "String"
+}
+
+###
+POST http://localhost:3977/api/v1/empleados/registrar/empleados
+Content-Type: application/json
+
+{
+    "nombre_emp": "dfg",
+    "apellidos_emp": "sdff",
+    "cedula_emp": "jssssddddssf",
+    "fecNacimiento_emp": "2002-08-01",
+    "tipoEmpleado": "jsdf",
+    "id_departamento": "sdsdfssdfsdfpudf"
+}
+
+###
+
+POST http://localhost:3977/api/v1/casos/registrar/caso
+Content-Type: application/json
+
+{
+
+}
+
+
+
+###
+GET http://localhost:3977/api/v1/casos/getByIdOrganizacion/62b764538868159bd5a2c9eb
+
+
+
+###
+GET http://localhost:3977/api/v1/organizacion/getOrganizacion/62ac0ecdf38505c37aa133a0
+
+###
+PUT http://localhost:3977/api/v1/usuarios/actualizar/usuario/62b764538868159bd5a2c9ed
+Content-Type: application/json
+
+{
+"nombre_usuario": "kolbi",
+"rol": "Cordero Viales",
+"contrasena": "1234"
+}
+
+###
+DELETE http://localhost:3977/api/v1/eliminar/6288594676f7807960930e60
+
+//Usuarios
+
+###
+POST http://localhost:3977/api/v1/usuarios/registrar/usuario
+Content-Type: application/json
+
+{
+    "nombre_usuario": "una123f",
+    "rol": "Ingeniero",
+    "contrasena": "una321",
+    "organizacion_id": "3js9f3jf83hfejwrf834bfss"
+}
+
+
+###
+POST http://localhost:3977/api/v1/registrar/departamento
+Content-Type: application/json
+
+{
+    "nombre_dep": "String",
+    "jefe_dep": "String",
+    "dir_dep": "String",
+    "tel_dep": 88907644,
+    "correo_dep": "String"
+}
+
+###
+GET http://localhost:3977/api/v1/obtener/usuario/62a55dad7e7883a2ed9f731b
+Content-Type: application/json
+
+{
+    "nombre_usuario": "una123",
+    "rol": "Ingeniero",
+    "contrasena": "una321",
+    "organizacion_id": "3js9f3jf83hfejwrf834bfss"
+}
+
+###
+
+GET http://localhost:3977/api/v1/documentos/finById/62ba809a473f777a9a216e2b
+
+###
+GET  http://localhost:3977/api/v1/tramites/getByIdDep/62b945ece783af39ebe033e0
+
+###
+GET http://localhost:3977/api/v1/departamento/obtener/62b94f1803065fdd01fd46ff
+
+###
+PUT http://localhost:3977/api/v1/documentos/actualizar/62ba9aac133f728b297ea11b
+Content-Type: application/json
+
+{
+"nombre_doc": "String",
+"url_doc": "String",
+"estado_doc": true,
+"tipo_documento": "String",
+"id_tramite": "String",
+"id_caso": "String"
+}
